@@ -27,7 +27,7 @@ function App() {
 fetchPosts()
   })
 
-  
+
   return (
     <div className="App">
       <input type="text" value={title} placeholder="Title"
@@ -38,6 +38,10 @@ fetchPosts()
       />
 
       <button onClick={createPost}>Create Post</button>
+
+      <br />
+
+      <h5>Posts:</h5>
 
       {
         posts.map( (post, index) => (
