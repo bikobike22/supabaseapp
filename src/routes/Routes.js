@@ -8,9 +8,9 @@ import Profile from '../profile/Profile'
  const Router= () => {
     return(
        <Routes>
-            <Route path="/supabaseapp" element={<HomeScreen/>} />
-            <Route path="/supabaseapp/profile" element={<Profile/>} />
-            <Route path='/supabaseapp/add' element={<AddClient/>} />
+            <Route path="/" element={<HomeScreen/>} />
+            <Route path="/profile" element={<Profile/>} />
+            <Route path='/add' element={<AddClient/>} />
         </Routes>
     )
 
