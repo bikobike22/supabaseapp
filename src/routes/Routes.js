@@ -10,7 +10,7 @@ import Profile from '../profile/Profile'
        <Routes>
             <Route path="/supabaseapp" element={<HomeScreen/>} />
             <Route path="/supabaseapp/profile" element={<Profile/>} />
-            <Route path='/add' element={<AddClient/>} />
+            <Route path='/supabaseapp/add' element={<AddClient/>} />
         </Routes>
     )
 
