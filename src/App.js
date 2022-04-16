@@ -14,11 +14,11 @@ function App() {
   }
 
 
-  const fetchPostsName = async () => {
-    const { data } = await supabase.from('testTB')
-    .select().match({ 'title': 'بيكو'})
+  const fetchPostsByName = async () => {
+    const doc = await supabase.from('testTB')
+    .select().like( 'title', '%b%')
 
-    console.log(data);
+    console.log(doc);
     
   }
 
@@ -35,7 +35,8 @@ function App() {
 
   useEffect(() => {
        fetchPosts()
-       fetchPostsName()
+       fetchPostsByName()
+       
   })
 
 
