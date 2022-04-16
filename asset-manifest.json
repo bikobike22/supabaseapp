@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/supabaseapp/static/css/main.0b4e74b4.css",
+    "main.js": "/supabaseapp/static/js/main.71367e9e.js",
+    "static/js/787.5f2ac86b.chunk.js": "/supabaseapp/static/js/787.5f2ac86b.chunk.js",
+    "index.html": "/supabaseapp/index.html",
+    "main.0b4e74b4.css.map": "/supabaseapp/static/css/main.0b4e74b4.css.map",
+    "main.71367e9e.js.map": "/supabaseapp/static/js/main.71367e9e.js.map",
+    "787.5f2ac86b.chunk.js.map": "/supabaseapp/static/js/787.5f2ac86b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b4e74b4.css",
+    "static/js/main.71367e9e.js"
+  ]
+}
