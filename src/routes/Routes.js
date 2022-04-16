@@ -8,7 +8,7 @@ import Profile from '../profile/Profile'
  const Router= () => {
     return(
        <Routes>
-            <Route path="/" element={<HomeScreen/>} />
+            <Route path="/supabaseapp" element={<HomeScreen/>} />
             <Route path="/supabaseapp/profile" element={<Profile/>} />
             <Route path='/add' element={<AddClient/>} />
         </Routes>
