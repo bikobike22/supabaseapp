@@ -38,8 +38,6 @@ const Header = ()=> {
 
             <Nav.Link href="/">Home</Nav.Link>
             
-            <Nav.Link href="/all">Clients</Nav.Link>
-            
             <Nav.Link href="/add">Add</Nav.Link>
             
             <Nav.Link href="/profile">Profile</Nav.Link> 
