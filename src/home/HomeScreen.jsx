@@ -1,8 +1,13 @@
 import React from 'react'
+import AllClients from './components/AllClients'
 
-function HomeScreen() {
+const HomeScreen =()=> {
   return (
-    <div>HomeScreen</div>
+    <div>HomeScreen
+
+      <AllClients/>
+        
+    </div>
   )
 }
 
