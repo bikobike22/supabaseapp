@@ -13,6 +13,16 @@ function App() {
     setPosts(data)
   }
 
+
+  const fetchPostsName = async () => {
+    const { data } = await supabase.from('testTB')
+    .select().match({ 'title': 'بيكو'})
+
+    console.log(data);
+    
+  }
+
+
   const createPost = async () => {
      await supabase.from('testTB')
     .insert([
@@ -24,7 +34,8 @@ function App() {
   } 
 
   useEffect(() => {
-fetchPosts()
+       fetchPosts()
+       fetchPostsName()
   })
 
 
