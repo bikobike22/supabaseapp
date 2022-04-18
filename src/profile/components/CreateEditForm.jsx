@@ -8,6 +8,7 @@ const CreateEditForm = (props) => {
 
     let { id, preference } = props
     let cst = props.customer;
+    let pRef = props.preference;
 
     // let name;
 
@@ -332,6 +333,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="Hit"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'hit')}
                                             onChange={(e) => setHit(e.target.value)}
                                         />
                                     </Form.Group>
@@ -342,6 +344,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="height"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'height')}
                                             onChange={(e) => setHeight(e.target.value)}
                                         />
                                     </Form.Group>
@@ -354,6 +357,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="width"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'width')}
                                             onChange={(e) => setWidth(e.target.value)}
                                         />
                                     </Form.Group>
@@ -364,6 +368,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="chest"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'chest')}
                                             onChange={(e) => setChest(e.target.value)}
                                         />
                                     </Form.Group>
@@ -374,6 +379,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="bust"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'bust')}
                                             onChange={(e) => setbust(e.target.value)}
                                         />
                                     </Form.Group>
@@ -386,7 +392,7 @@ const CreateEditForm = (props) => {
                                         <Form.Label > waist</Form.Label>
                                         <Form.Control
                                             type="number"
-                                            name="waist"
+                                            name="waist"defaultValue={CheckPropsTypeAndPassValue(pRef, 'waist')}
                                             onChange={(e) => setwaist(e.target.value)}
 
 
@@ -399,6 +405,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="hip"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'hip')}
                                             onChange={(e) => sethip(e.target.value)}
                                         />
                                     </Form.Group>
@@ -411,6 +418,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="top_hip"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'top_hip')}
                                             onChange={(e) => settop_hip(e.target.value)}
                                         />
                                     </Form.Group>
@@ -421,6 +429,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="low_waist"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'low_waist')}
                                             onChange={(e) => setlow_waist(e.target.value)}
                                         />
                                     </Form.Group>
@@ -431,6 +440,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="back_waist"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'back_waist')}
                                             onChange={(e) => setback_waist(e.target.value)}
                                         />
                                     </Form.Group>
@@ -444,6 +454,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="front_waist"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'front_waist')}
                                             onChange={(e) => setfront_waist(e.target.value)}
                                         />
                                     </Form.Group>
@@ -454,6 +465,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="schoulder_width"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'schoulder_width')}
                                             onChange={(e) => setschoulder_width(e.target.value)}
                                         />
                                     </Form.Group>
@@ -466,6 +478,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="back_width"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'back_width')}
                                             onChange={(e) => setback_width(e.target.value)}
                                         />
                                     </Form.Group>
@@ -476,6 +489,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="bust_height"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'bust_height')}
                                             onChange={(e) => setbust_height(e.target.value)}
                                         />
                                     </Form.Group>
@@ -486,6 +500,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="apex"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'apex')}
                                             onChange={(e) => setapex(e.target.value)}
                                         />
                                     </Form.Group>
@@ -499,6 +514,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="arm_hole_depth"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'arm_hole_depth')}
                                             onChange={(e) => setarm_hole_depth(e.target.value)}
                                         />
                                     </Form.Group>
@@ -509,6 +525,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="hip_height"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'hip_height')}
                                             onChange={(e) => sethip_height(e.target.value)}
                                         />
                                     </Form.Group>
@@ -521,6 +538,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="top_arm"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'top_arm')}
                                             onChange={(e) => setTop_arm(e.target.value)}
                                         />
                                     </Form.Group>
@@ -531,6 +549,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="wrist_circ"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'wrist_circ')}
                                             onChange={(e) => setWrist_circ(e.target.value)}
                                         />
                                     </Form.Group>
@@ -541,6 +560,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="sleeve_length"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'sleeve_length')}
                                             onChange={(e) => setSleeve_length(e.target.value)}
                                         />
                                     </Form.Group>
@@ -554,6 +574,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="elbow_length"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'elbow_length')}
                                             onChange={(e) => setElbow_length(e.target.value)}
                                         />
                                     </Form.Group>
@@ -564,6 +585,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="rise"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'rise')}
                                             onChange={(e) => setrise(e.target.value)}
                                         />
                                     </Form.Group>
@@ -576,6 +598,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="crotch_depth"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'crotch_depth')}
                                             onChange={(e) => setCrotch_depth(e.target.value)}
                                         />
                                     </Form.Group>
@@ -586,6 +609,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="waist_to_knee"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'waist_to_knee')}
                                             onChange={(e) => setWaist_to_knee(e.target.value)}
                                         />
                                     </Form.Group>
@@ -596,6 +620,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="knee"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'knee')}
                                             onChange={(e) => setKnee(e.target.value)}
                                         />
                                     </Form.Group>
@@ -609,6 +634,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="thigh"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'thigh')}
                                             onChange={(e) => setThigh(e.target.value)}
                                         />
                                     </Form.Group>
@@ -619,6 +645,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="dress_length"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'dress_length')}
                                             onChange={(e) => setDress_length(e.target.value)}
                                         />
                                     </Form.Group>
@@ -631,6 +658,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="blouse_length"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'blouse_length')}
                                             onChange={(e) => setBlouse_length(e.target.value)}
                                         />
                                     </Form.Group>
@@ -645,6 +673,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="pants_length"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'pants_length')}
                                             onChange={(e) => setPants_length(e.target.value)}
                                         />
                                     </Form.Group>
@@ -656,6 +685,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="skirt_length"
+                                            defaultValue={CheckPropsTypeAndPassValue(pRef, 'skirt_length')}
                                             onChange={(e) => setSkirt_length(e.target.value)}
                                         />
                                     </Form.Group>

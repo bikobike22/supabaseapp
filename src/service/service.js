@@ -48,6 +48,7 @@ export const fetchAllCustomersWithPreferences = async () => {
     const { data, error } = await supabase
         .from('customer')
         .select('*, preferences(*)')
+        .order('id', {ascending: true})
         
 
     console.log('res relation pref: ', data, error)

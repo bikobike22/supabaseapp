@@ -28,9 +28,14 @@ const ProfileCustomer = (props) => {
   const onePrefByCustomerID = async () => {
     const cust = service.fetchOnePreferenceByCustomerID(id)
     cust.then(th => {
-     th.map( m => ( setPref(m)))
+      console.log('th pref: ', th)
+      th.map(m => (setPref(m)))
+      
+
       
     })
+
+    console.log(' pref state: ', pref)
   }
 
 

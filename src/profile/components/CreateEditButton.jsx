@@ -16,9 +16,10 @@ export const CreateEditButton = (props) => {
     const UpdateCustomer = (id, customer) => {
         const res = service.updateCustomer(id, customer);
         res.then(th => {
-            console.log('th: ', th);
+            console.log('th UpdateCustomer: ', th);
             //
-            //UpdatePreferencesByCustomerID(th.id, props.preferences)
+            th.map ( m => ( UpdatePreferencesByCustomerID(m.id, preferences)))
+            //UpdatePreferencesByCustomerID(th.id, preferences)
 
         })
 
