@@ -1,13 +1,9 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import { supabase} from './client'
-import { Button, } from 'react-bootstrap'
+import { supabase} from './config/client'
 import Header from './components/Header';
 import Router from './routes/Routes';
-import { Routes , Route } from 'react-router-dom'
-import AddClient from './add/AddClient'
-import HomeScreen from './home/HomeScreen'
-import Profile from './profile/Profile'
+
 
 
 

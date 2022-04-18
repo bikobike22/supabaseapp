@@ -1,13 +1,17 @@
 import React from 'react'
 import AllClients from './components/AllClients'
+import Page from '../components/page/Page'
 
 const HomeScreen =()=> {
   return (
-    <div>HomeScreen  kkkk pppp
+    <Page>
+      <div>
 
       <AllClients/>
         
     </div>
+    </Page>
+    
   )
 }
 

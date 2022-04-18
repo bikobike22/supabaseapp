@@ -1,8 +1,15 @@
 import React from 'react'
+import Page from '../components/page/Page'
+import CreateEditForm from '../profile/components/CreateEditForm'
 
 const AddClient =() => {
   return (
-    <div>AddClient</div>
+<Page>
+      
+      <div>AddClient</div>
+      <CreateEditForm type="create" />
+</Page>
+    
   )
 }
 
