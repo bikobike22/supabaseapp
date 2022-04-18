@@ -127,7 +127,33 @@ const CreateEditForm = (props) => {
         hit:hit,
         height:height,
         width: width,
-       chest: chest,
+        chest: chest,
+        bust: bust,
+        waist: waist,
+        hip: hip,
+        top_hip: top_hip,
+        low_waist: low_waist,
+        back_waist: back_waist,
+        front_waist: front_waist,
+        schoulder_width: schoulder_width,
+        back_width: back_width,
+        bust_height: bust_height,
+        apex: apex,
+        arm_hole_depth: arm_hole_depth,
+        hip_height: hip_height,
+        top_arm: top_arm,
+        wrist_circ: wrist_circ,
+        sleeve_length: sleeve_length,
+        elbow_length: elbow_length,
+         rise: rise,
+        crotch_depth: crotch_depth,
+        waist_to_knee: waist_to_knee,
+        knee: knee,
+        thigh: thigh,
+        dress_length: dress_length,
+        blouse_length: blouse_length,
+        pants_length: pants_length,
+        skirt_length: skirt_length,
 
        
     }
@@ -348,6 +374,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="bust"
+                                            onChange={(e) => setbust(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -360,6 +387,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="waist"
+                                            onChange={(e) => setwaist(e.target.value)}
 
 
                                         />
@@ -371,6 +399,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="hip"
+                                            onChange={(e) => sethip(e.target.value)}
                                         />
                                     </Form.Group>
 
@@ -382,6 +411,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="top_hip"
+                                            onChange={(e) => settop_hip(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -391,6 +421,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="low_waist"
+                                            onChange={(e) => setlow_waist(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -400,6 +431,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="back_waist"
+                                            onChange={(e) => setback_waist(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -412,6 +444,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="front_waist"
+                                            onChange={(e) => setfront_waist(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -421,6 +454,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="schoulder_width"
+                                            onChange={(e) => setschoulder_width(e.target.value)}
                                         />
                                     </Form.Group>
 
@@ -432,6 +466,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="back_width"
+                                            onChange={(e) => setback_width(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -441,6 +476,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="bust_height"
+                                            onChange={(e) => setbust_height(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -450,6 +486,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="apex"
+                                            onChange={(e) => setapex(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -462,6 +499,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="arm_hole_depth"
+                                            onChange={(e) => setarm_hole_depth(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -471,6 +509,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="hip_height"
+                                            onChange={(e) => sethip_height(e.target.value)}
                                         />
                                     </Form.Group>
 
@@ -482,6 +521,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="top_arm"
+                                            onChange={(e) => setTop_arm(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -491,6 +531,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="wrist_circ"
+                                            onChange={(e) => setWrist_circ(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -500,6 +541,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="sleeve_length"
+                                            onChange={(e) => setSleeve_length(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -512,6 +554,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="elbow_length"
+                                            onChange={(e) => setElbow_length(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -521,6 +564,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="rise"
+                                            onChange={(e) => setrise(e.target.value)}
                                         />
                                     </Form.Group>
 
@@ -532,6 +576,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="crotch_depth"
+                                            onChange={(e) => setCrotch_depth(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -541,6 +586,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="waist_to_knee"
+                                            onChange={(e) => setWaist_to_knee(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -550,6 +596,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="knee"
+                                            onChange={(e) => setKnee(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -562,6 +609,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="thigh"
+                                            onChange={(e) => setThigh(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -571,6 +619,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="dress_length"
+                                            onChange={(e) => setDress_length(e.target.value)}
                                         />
                                     </Form.Group>
 
@@ -582,6 +631,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="blouse_length"
+                                            onChange={(e) => setBlouse_length(e.target.value)}
                                         />
                                     </Form.Group>
                                 </Col>
@@ -595,6 +645,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="pants_length"
+                                            onChange={(e) => setPants_length(e.target.value)}
                                         />
                                     </Form.Group>
 
@@ -605,6 +656,7 @@ const CreateEditForm = (props) => {
                                         <Form.Control
                                             type="number"
                                             name="skirt_length"
+                                            onChange={(e) => setSkirt_length(e.target.value)}
                                         />
                                     </Form.Group>
 
