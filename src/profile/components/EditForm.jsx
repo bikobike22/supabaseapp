@@ -1,10 +1,12 @@
 import React,{useState, useEffect,   } from 'react'
 import { Container, Row, Col, Button, Modal, Form, } from 'react-bootstrap'
+import { useTranslation } from '../../translations/Translations'
 import {CreateEditButton } from './CreateEditButton'
 
 export const EditForm = (props) => {
 
 
+  const { translate } = useTranslation()
 
     const [customer, setCustomer] = useState(props.customer)
 
@@ -244,7 +246,8 @@ export const EditForm = (props) => {
   
   return (
     <div>
-      Edit form
+     
+          <h5>{translate("edit-client") }</h5>
 
        <Container>
             <Row>
@@ -317,7 +320,7 @@ export const EditForm = (props) => {
 
 
                         <Row className='mt-4 pt-4 '>
-                            <h5>Preferences</h5>
+                            <h5>{translate("measurements") }</h5>
                         </Row>
 
                         <Container className='mt-4 pt-4 pb-4 border'>

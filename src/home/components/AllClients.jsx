@@ -2,11 +2,14 @@ import React, { useState, useEffect, } from 'react'
 import { Container, Row, Col, Button, Modal,Table, } from 'react-bootstrap'
 import { Navigate, NavLink,Link, } from 'react-router-dom'
 import * as service from "../../service/service"
+import { useTranslation } from '../../translations/Translations'
 
 const AllClients = () => {
 
   const [customers, setCustomers] = useState([])
   const [all, setAll] = useState([])
+
+  const { translate } = useTranslation()
 
 
   const fetchCustomers = async () => {
@@ -57,16 +60,16 @@ const AllClients = () => {
 
   return (
     <>
-      <p>All Clients</p>
+      <p>{translate("clients")}</p>
 
       
       <Table striped bordered hover size="sm">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Phone</th>
-      <th>Size</th>
-      <th>Hit</th>
+      <th>{translate("name")}</th>
+      <th>{translate("phone")}</th>
+      <th>{translate("size")}</th>
+      <th>#</th>
     </tr>
   </thead>
         <tbody>

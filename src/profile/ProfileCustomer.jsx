@@ -50,7 +50,7 @@ const ProfileCustomer = (props) => {
   return (
     <Page>
 
-      <div>ProfileClientScreen</div>
+      <div></div>
 
        <EditForm type="edit" id={id} customer={customer} preference={pref} />
 

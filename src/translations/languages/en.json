@@ -1,10 +1,13 @@
-[
+
     {
         "warsha":"warscha",
+        "home":"home",
         "customer": "customer",
         "customers": "customers",
         "client": "client",
         "clients": "clients",
+        "add-new-client" : "Add New Client",
+        "edit-client":"Edit The Client",
         "delete": "delete",
         "add": "add",
         "login": "login",
@@ -12,11 +15,13 @@
         "update": "update",
         "name": "name",
         "mobile": "mobile",
+        "phone":"phone",
         "size": "size",
         "note": "note",
         "preferences": "preferences",
         "preference": "preference",
         "measurement": "measurement",
+        "measurements":"measurements",
         "hit":"hit",
         "height":"height",
         "width":"width",
@@ -50,4 +55,3 @@
         "skirt_length":"skirt_length"
     }
     
-]

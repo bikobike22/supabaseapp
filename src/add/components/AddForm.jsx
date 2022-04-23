@@ -1,11 +1,13 @@
 import React,{useState, useEffect,  } from 'react'
 import { Container, Row, Col, Button, Modal, Form, } from 'react-bootstrap'
 import {CreateEditButton } from '../../profile/components/CreateEditButton'
+import { useTranslation } from '../../translations/Translations'
 
 const AddForm = (props) => {
 
 
-
+    const { translate } = useTranslation()
+    
     const [customer, setCustomer] = useState(props.customer)
 
     const [cust_ID, setCustID] = useState(props.id)
@@ -239,7 +241,7 @@ const AddForm = (props) => {
   
   return (
     <div>
-      add form
+     
 
        <Container>
             <Row>
@@ -247,14 +249,14 @@ const AddForm = (props) => {
                     <Form onSubmit={handleSubmit}>
 
                         <Row className='mt-4 pt-4'>
-                            <h5>Customer</h5>
+                              <h5>{translate("client")}</h5>
                         </Row>
 
                         <Container className='mt-4 pt-4 pb-4 border'>
                             <Row>
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
-                                        <Form.Label > Name , </Form.Label>
+                                        <Form.Label > Name </Form.Label>
                                         <Form.Control
                                             type="text"
                                             name="name"
@@ -317,7 +319,7 @@ const AddForm = (props) => {
 
 
                         <Row className='mt-4 pt-4 '>
-                            <h5>Preferences</h5>
+                              <h5>{translate("measurements") }</h5>
                         </Row>
 
                         <Container className='mt-4 pt-4 pb-4 border'>

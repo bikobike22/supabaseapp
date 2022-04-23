@@ -1,10 +1,13 @@
-[
+
     {
-        "warsha":"الودشه",
+        "warsha":"الورشة",
+        "home":"الرئيسية",
         "customer": "العميل",
         "customers": "العملا",
         "client":"العميل",
-        "clients":"العملا",
+        "clients":"العملاء",
+        "add-new-client" : "اضافة عميل جديد",
+        "edit-client":"تعديل بيانات العميل",
         "delete": "مسح",
         "add": "اضافه",
         "login": "تسجيل",
@@ -12,11 +15,13 @@
         "update":"تحديث",
         "name":"اسم",
         "mobile":"موبيل",
+        "phone":"موبيل",
         "size":"حجم",
         "note":"ملاحظه",
         "preferences":"الخصائص",
         "preference":"الخاصية",
         "measurement":"القياس",
+        "measurements":"المقاسات",
         "hit":"hit",
         "height":"الطول",
         "width":"العرض",
@@ -52,4 +57,3 @@
         "pants_length":"طول البنطال",
         "skirt_length":"طول_التنورة"
     }
-]

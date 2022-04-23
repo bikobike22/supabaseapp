@@ -3,7 +3,14 @@ import './App.css';
 import { supabase} from './config/client'
 import Header from './components/Header';
 import Router from './routes/Routes';
+import i18Next from './translations/i18Init';
+import { useTranslation } from './translations/Translations';
+import {library, } from '@fortawesome/fontawesome-svg-core'
+import {  } from '@fortawesome/free-regular-svg-icons'
+import {faEarth, faCake } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+// library(faEarth, faCake)
 
 
 
@@ -14,6 +21,8 @@ const App = () => {
 
   const [search, setSearch] = useState("")
   const [searchedData, setSearchedData] = useState([]);
+
+  const {getLng} = useTranslation()
 
 
   const fetchPosts = async () => {
@@ -52,10 +61,10 @@ const App = () => {
   return (
     <div className="App">
       
-    
-
-     
       <Header />
+
+            
+
       < Router />
 
       {/* <p>Search</p>
