@@ -346,7 +346,13 @@ export const EditForm = (props) => {
 
                                 </Col>
 
-                                <Col>
+                               
+                                
+                              </Row>
+                              
+
+                              <Row>
+                                   <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > width</Form.Label>
                                         <Form.Control
@@ -368,7 +374,9 @@ export const EditForm = (props) => {
                                         />
                                     </Form.Group>
                                 </Col>
-                                <Col>
+                              </Row>
+                              <Row>
+                                  <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > bust</Form.Label>
                                         <Form.Control
@@ -378,11 +386,8 @@ export const EditForm = (props) => {
                                             onChange={(e) => setbust(Number(e.target.value))}
                                         />
                                     </Form.Group>
-                                </Col>
-                            </Row>
-
-                            <Row>
-                                <Col>
+                                  </Col>
+                                   <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > waist</Form.Label>
                                         <Form.Control
@@ -394,6 +399,11 @@ export const EditForm = (props) => {
                                         />
                                     </Form.Group>
                                 </Col>
+                                  
+
+                              </Row>
+                              <Row>
+
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > hip</Form.Label>
@@ -418,6 +428,70 @@ export const EditForm = (props) => {
                                         />
                                     </Form.Group>
                                 </Col>
+                              </Row>
+                              <Row>
+
+
+                              </Row>
+                              <Row>
+
+                                  <Col>
+                                    <Form.Group as={Row} controlId="name">
+                                        <Form.Label > front_waist</Form.Label>
+                                        <Form.Control
+                                            type="number"
+                                            name="front_waist"
+                                            defaultValue={CheckPropsTypeAndPassValue(prefObj, 'front_waist')}
+                                            onChange={(e) => setfront_waist(Number(e.target.value))}
+                                        />
+                                    </Form.Group>
+                                </Col>
+                                <Col>
+                                    <Form.Group as={Row} controlId="name">
+                                        <Form.Label > schoulder_width</Form.Label>
+                                        <Form.Control
+                                            type="number"
+                                            name="schoulder_width"
+                                            defaultValue={CheckPropsTypeAndPassValue(prefObj, 'schoulder_width')}
+                                            onChange={(e) => setschoulder_width(Number(e.target.value))}
+                                        />
+                                    </Form.Group>
+
+                                </Col>
+                              </Row>
+                              <Row>
+
+                                   <Col>
+                                    <Form.Group as={Row} controlId="name">
+                                        <Form.Label > back_width</Form.Label>
+                                        <Form.Control
+                                            type="number"
+                                            name="back_width"
+                                            defaultValue={CheckPropsTypeAndPassValue(prefObj, 'back_width')}
+                                            onChange={(e) => setback_width(Number(e.target.value))}
+                                        />
+                                    </Form.Group>
+                                  </Col>
+
+                                   <Col>
+                                    <Form.Group as={Row} controlId="name">
+                                        <Form.Label > arm_hole_depth</Form.Label>
+                                        <Form.Control
+                                            type="number"
+                                            name="arm_hole_depth"
+                                            defaultValue={CheckPropsTypeAndPassValue(prefObj, 'arm_hole_depth')}
+                                            onChange={(e) => setarm_hole_depth(Number(e.target.value))}
+                                        />
+                                    </Form.Group>
+                                </Col>
+                                  
+
+                              </Row>
+                              
+
+                            <Row>
+                               
+                               
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > low_waist</Form.Label>
@@ -443,41 +517,9 @@ export const EditForm = (props) => {
                             </Row>
 
                             <Row>
-                                <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > front_waist</Form.Label>
-                                        <Form.Control
-                                            type="number"
-                                            name="front_waist"
-                                            defaultValue={CheckPropsTypeAndPassValue(prefObj, 'front_waist')}
-                                            onChange={(e) => setfront_waist(Number(e.target.value))}
-                                        />
-                                    </Form.Group>
-                                </Col>
-                                <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > schoulder_width</Form.Label>
-                                        <Form.Control
-                                            type="number"
-                                            name="schoulder_width"
-                                            defaultValue={CheckPropsTypeAndPassValue(prefObj, 'schoulder_width')}
-                                            onChange={(e) => setschoulder_width(Number(e.target.value))}
-                                        />
-                                    </Form.Group>
+                                
 
-                                </Col>
-
-                                <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > back_width</Form.Label>
-                                        <Form.Control
-                                            type="number"
-                                            name="back_width"
-                                            defaultValue={CheckPropsTypeAndPassValue(prefObj, 'back_width')}
-                                            onChange={(e) => setback_width(Number(e.target.value))}
-                                        />
-                                    </Form.Group>
-                                </Col>
+                               
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > bust_height</Form.Label>
@@ -500,20 +542,9 @@ export const EditForm = (props) => {
                                         />
                                     </Form.Group>
                                 </Col>
-                            </Row>
-
-                            <Row>
-                                <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > arm_hole_depth</Form.Label>
-                                        <Form.Control
-                                            type="number"
-                                            name="arm_hole_depth"
-                                            defaultValue={CheckPropsTypeAndPassValue(prefObj, 'arm_hole_depth')}
-                                            onChange={(e) => setarm_hole_depth(Number(e.target.value))}
-                                        />
-                                    </Form.Group>
-                                </Col>
+                              </Row>
+                              
+                              <Row>
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > hip_height</Form.Label>
@@ -538,6 +569,15 @@ export const EditForm = (props) => {
                                         />
                                     </Form.Group>
                                 </Col>
+
+                              </Row>
+
+
+                            
+
+                            <Row>
+                               
+                                
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > wrist_circ</Form.Label>
@@ -562,8 +602,8 @@ export const EditForm = (props) => {
                                 </Col>
                             </Row>
 
-                            <Row>
-                                <Col>
+                              <Row>
+                                   <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > elbow_length</Form.Label>
                                         <Form.Control
@@ -586,18 +626,14 @@ export const EditForm = (props) => {
                                     </Form.Group>
 
                                 </Col>
+                                </Row>
+                              
 
-                                <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > crotch_depth</Form.Label>
-                                        <Form.Control
-                                            type="number"
-                                            name="crotch_depth"
-                                            defaultValue={CheckPropsTypeAndPassValue(prefObj, 'crotch_depth')}
-                                            onChange={(e) => setCrotch_depth(Number(e.target.value))}
-                                        />
-                                    </Form.Group>
-                                </Col>
+
+                            <Row>
+                               
+
+                               
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > waist_to_knee</Form.Label>
@@ -622,8 +658,21 @@ export const EditForm = (props) => {
                                 </Col>
                             </Row>
 
-                            <Row>
-                                <Col>
+                              <Row>
+
+                                   <Col>
+                                    <Form.Group as={Row} controlId="name">
+                                        <Form.Label > crotch_depth</Form.Label>
+                                        <Form.Control
+                                            type="number"
+                                            name="crotch_depth"
+                                            defaultValue={CheckPropsTypeAndPassValue(prefObj, 'crotch_depth')}
+                                            onChange={(e) => setCrotch_depth(Number(e.target.value))}
+                                        />
+                                    </Form.Group>
+                                  </Col>
+                                  
+                                   <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > thigh</Form.Label>
                                         <Form.Control
@@ -634,6 +683,13 @@ export const EditForm = (props) => {
                                         />
                                     </Form.Group>
                                 </Col>
+                              </Row>
+
+                             
+
+
+                            <Row>
+                               
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > dress_length</Form.Label>

@@ -344,7 +344,9 @@ const AddForm = (props) => {
                                         />
                                     </Form.Group>
 
-                                </Col>
+                                  </Col>
+                              </Row>
+                              <Row>
 
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
@@ -367,7 +369,9 @@ const AddForm = (props) => {
                                             onChange={(e) => setChest(e.target.value)}
                                         />
                                     </Form.Group>
-                                </Col>
+                                  </Col>
+                              </Row>
+                              <Row>
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > bust</Form.Label>
@@ -378,11 +382,8 @@ const AddForm = (props) => {
                                             onChange={(e) => setbust(e.target.value)}
                                         />
                                     </Form.Group>
-                                </Col>
-                            </Row>
-
-                            <Row>
-                                <Col>
+                                  </Col>
+                                  <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > waist</Form.Label>
                                         <Form.Control
@@ -394,6 +395,10 @@ const AddForm = (props) => {
                                         />
                                     </Form.Group>
                                 </Col>
+                            </Row>
+
+                            <Row>
+                                
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > hip</Form.Label>
@@ -405,9 +410,8 @@ const AddForm = (props) => {
                                         />
                                     </Form.Group>
 
-                                </Col>
-
-                                <Col>
+                                  </Col>
+                                   <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > top_hip</Form.Label>
                                         <Form.Control
@@ -418,6 +422,11 @@ const AddForm = (props) => {
                                         />
                                     </Form.Group>
                                 </Col>
+                              </Row>
+                              
+                              <Row>
+
+                               
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > low_waist</Form.Label>
@@ -465,7 +474,10 @@ const AddForm = (props) => {
                                         />
                                     </Form.Group>
 
-                                </Col>
+                                  </Col>
+                              </Row>
+                              
+                              <Row>
 
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
@@ -489,7 +501,10 @@ const AddForm = (props) => {
                                         />
                                     </Form.Group>
                                 </Col>
-                                <Col>
+                               
+                              </Row>
+                              <Row>
+                                   <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > apex</Form.Label>
                                         <Form.Control
@@ -499,11 +514,8 @@ const AddForm = (props) => {
                                             onChange={(e) => setapex(e.target.value)}
                                         />
                                     </Form.Group>
-                                </Col>
-                            </Row>
-
-                            <Row>
-                                <Col>
+                                  </Col>
+                                  <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > arm_hole_depth</Form.Label>
                                         <Form.Control
@@ -514,6 +526,11 @@ const AddForm = (props) => {
                                         />
                                     </Form.Group>
                                 </Col>
+                                  
+                              </Row>
+
+                            <Row>
+                                
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > hip_height</Form.Label>
@@ -525,9 +542,9 @@ const AddForm = (props) => {
                                         />
                                     </Form.Group>
 
-                                </Col>
+                                  </Col>
 
-                                <Col>
+                                   <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > top_arm</Form.Label>
                                         <Form.Control
@@ -537,7 +554,13 @@ const AddForm = (props) => {
                                             onChange={(e) => setTop_arm(e.target.value)}
                                         />
                                     </Form.Group>
-                                </Col>
+                                  </Col>
+                                  
+                              </Row>
+                              
+                              <Row>
+
+                               
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > wrist_circ</Form.Label>
@@ -585,7 +608,10 @@ const AddForm = (props) => {
                                         />
                                     </Form.Group>
 
-                                </Col>
+                                  </Col>
+                              </Row>
+                              
+                              <Row>
 
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
@@ -608,7 +634,9 @@ const AddForm = (props) => {
                                             onChange={(e) => setWaist_to_knee(e.target.value)}
                                         />
                                     </Form.Group>
-                                </Col>
+                                  </Col>
+                              </Row>
+                              <Row>
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > knee</Form.Label>
@@ -619,11 +647,8 @@ const AddForm = (props) => {
                                             onChange={(e) => setKnee(e.target.value)}
                                         />
                                     </Form.Group>
-                                </Col>
-                            </Row>
-
-                            <Row>
-                                <Col>
+                                  </Col>
+                                  <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > thigh</Form.Label>
                                         <Form.Control
@@ -634,6 +659,10 @@ const AddForm = (props) => {
                                         />
                                     </Form.Group>
                                 </Col>
+                            </Row>
+
+                            <Row>
+                                
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
                                         <Form.Label > dress_length</Form.Label>
