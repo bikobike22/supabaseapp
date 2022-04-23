@@ -105,6 +105,8 @@ if (error) {
 } 
 
 export const updateCustomer = async (id, body) => {
+
+    console.log("updateCustomer: ", id, body)
     const { data, error } = await supabase
         .from('customer')
         .update(body)
@@ -115,18 +117,43 @@ export const updateCustomer = async (id, body) => {
 
 export const updatePreferencesByCustomerID = async (cust_id, body) => {
 
-    const hasPref = CheckfetchOnePreferenceByCustomerID(cust_id)
+    //const hasPref = CheckfetchOnePreferenceByCustomerID(cust_id)
 
-    if (hasPref) {
-        const { data, error } = await supabase
+     const { data, error } = await supabase
             .from('preferences')
-            .update(body)
-            .match({ 'customer_id': cust_id })
-    } else {
-        // create pref
-        createPreferencesByCustomerID(cust_id, body)
+         .update(body)
+         .eq('customer_id', cust_id)
+           // .match({ 'customer_id': cust_id })
+        if(error) return error
+        return data
 
-    }
+    // const { data_, error_ } = await supabase
+    //     .from('preferences')
+    //     .match({ 'customer_id': cust_id })
+    //  if(error_) return error_
+    
+    // if (data_) {
+    //     const { data, error } = await supabase
+    //         .from('preferences')
+    //         .update(body)
+    //         .match({ 'customer_id': cust_id })
+    //     if(error) return error
+    //     return data
+    // } else {
+    //      createPreferencesByCustomerID(cust_id, body)
+    // }
+
+
+    // if (hasPref) {
+    //     const { data, error } = await supabase
+    //         .from('preferences')
+    //         .update(body)
+    //         .match({ 'customer_id': cust_id })
+    // } else {
+    //     // create pref
+    //     createPreferencesByCustomerID(cust_id, body)
+
+    // }
 
 
 
@@ -149,18 +176,24 @@ export const CheckfetchOnePreferenceByCustomerID = async (cust_id) => {
 
 export const createPreferencesByCustomerID = async (cust_id, body) => {
 
-    body.customer_id = cust_id
+    // body.customer_id = cust_id
 
-    const { data, error } = await supabase
+    console.log("createPreferencesByCustomerID: ", cust_id, body)
+
+    try {
+        const { data, error } = await supabase
         .from('preferences')
         .insert([body])
-        .single()
+            .single()
+       return data 
 
-if (error) {
-        return error;
+    } catch (error) {
+         return error;
     }
+    
 
-    return data ? true : false
+
+    
       
 
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, } from 'react'
-import { Container, Row, Col, Button, Modal, } from 'react-bootstrap'
+import { Container, Row, Col, Button, Modal,Table, } from 'react-bootstrap'
 import { Navigate, NavLink,Link, } from 'react-router-dom'
 import * as service from "../../service/service"
 
@@ -13,7 +13,7 @@ const AllClients = () => {
     const res = service.fetchPosts();
     res.then(th => {
       console.log('th: ', th);
-      setCustomers(th);
+     // setCustomers(th);
       console.log('customers: ', customers)
     })
   }
@@ -43,7 +43,7 @@ const AllClients = () => {
 
   useEffect(() => {
 
-    fetchCustomers()
+    //fetchCustomers()
    //fetchCustO()
     fetchCustomersWithPrefs()
   })
@@ -59,61 +59,40 @@ const AllClients = () => {
     <>
       <p>All Clients</p>
 
-
-
-       {/* <Button variant="primary" size="sm" >
-        +
-      </Button> */}
       
-
-
-
-      <Container className="border mt-4 ">
-        <Row>
-
-
-        </Row>
-        <Row >
-          <Col sm>Name</Col>
-          <Col sm>Phone</Col>
-          <Col sm>Size</Col>
-          <Col sm>Hit</Col>
-          <Col sm></Col>
-          <Col sm></Col>
-        </Row>
-
-
-
-        {
-          all.map((cust, index) => (
-            <Row className="mt-1 p-1 " key={cust.id} >
-              <Col sm={2}>{cust.name}</Col>
-              <Col sm={2}>{cust.mobile }</Col>
-              <Col sm={2}>{cust.size}</Col>
+      <Table striped bordered hover size="sm">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Size</th>
+      <th>Hit</th>
+    </tr>
+  </thead>
+        <tbody>
+          {
+          all?.map((cust, index) => (
+            <tr className="mt-1 p-1 " key={cust.id} >
+              <td sm={2}>{cust.name}</td>
+              <td sm={2}>{cust.mobile }</td>
+              <td sm={2}>{cust.size}</td>
               {/* <Col sm={2}>{cust.order[0]["type"]}</Col> */}
-              <Col >
+              <td >
                 <NavLink to={"profile/"+cust.id } >view
                 </NavLink>
-              </Col>
+              </td>
               
-              {/* <Col >
-                <Button variant="primary" size="sm" onClick={() => console.log('Edit: ', cust.id)} >
-                  Edit
-                </Button>
-              </Col>
-              <Col sm>
-                <Button variant="danger" size="sm" onClick={() => console.log('Delete: ', cust.id)} >
-                  Delete
-                </Button>
-              </Col> */}
-            </Row>
+            </tr>
           ))
 
         }
+   
+  </tbody>
+</Table>
 
 
-      </Container>
-    </>
+
+     </>
   )
 }
 
