@@ -255,7 +255,7 @@ export const EditForm = (props) => {
                     <Form onSubmit={handleSubmit}>
 
                         <Row className='mt-4 pt-4'>
-                            <h5>Customer</h5>
+                              <h5>{translate("client")}</h5>
                         </Row>
 
                         <Container className='mt-4 pt-4 pb-4 border'>
