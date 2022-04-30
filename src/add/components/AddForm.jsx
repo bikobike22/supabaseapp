@@ -246,7 +246,7 @@ const AddForm = (props) => {
        <Container>
             <Row>
                 <Col>
-                    <Form onSubmit={handleSubmit}>
+                    <Form onSubmit={handleSubmit} className="pb-4">
 
                         <Row className='mt-4 pt-4'>
                               <h5>{translate("client")}</h5>
@@ -256,7 +256,7 @@ const AddForm = (props) => {
                             <Row>
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
-                                        <Form.Label > Name </Form.Label>
+                                        <Form.Label > {translate("name")} </Form.Label>
                                         <Form.Control
                                             type="text"
                                             name="name"
@@ -271,7 +271,7 @@ const AddForm = (props) => {
                                 </Col>
                                 <Col>
                                     <Form.Group as={Row} controlId="mobile">
-                                        <Form.Label > Mobile</Form.Label>
+                                        <Form.Label > {translate("mobile")}</Form.Label>
                                         <Form.Control
                                             type="number"
                                             name="mobile"
@@ -286,7 +286,7 @@ const AddForm = (props) => {
                             <Row>
                                 <Col>
                                     <Form.Group as={Row} controlId="size">
-                                        <Form.Label > Size</Form.Label>
+                                        <Form.Label > {translate("size")}</Form.Label>
                                         <Form.Control
                                             type="text"
                                             name="size"
@@ -302,7 +302,7 @@ const AddForm = (props) => {
                             <Row>
                                 <Col>
                                     <Form.Group as={Row} controlId="cust_note">
-                                        <Form.Label > Note</Form.Label>
+                                        <Form.Label > {translate("note")}</Form.Label>
                                         <Form.Control
                                             type="text"
                                             name="cust_note"
@@ -322,398 +322,612 @@ const AddForm = (props) => {
                               <h5>{translate("measurements") }</h5>
                         </Row>
 
-                        <Container className='mt-4 pt-4 pb-4 border'>
-                            <Row >
+                          <Container className='mt-4 pt-4 pb-4 border g-4 '  >
+                            <Row md={9}>
                                 <Col>
-                                    <Form.Group as={Row} controlId="Hit">
-                                        <Form.Label > Hit</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="Hit">
+                                          <Col>
+                                          <Form.Label > Hit</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="Hit"
                                             defaultValue={CheckPropsTypeAndPassValue('pRef', 'hit')}
                                             onChange={(e) => setHit(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                       
                                     </Form.Group>
                                 </Col>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > height</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                          <Col>
+                                          <Form.Label > height</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="height"
                                             defaultValue={CheckPropsTypeAndPassValue('pRef', 'height')}
                                             onChange={(e) => setHeight(e.target.value)}
                                         />
+                                          </Col>
+                                          
+                                        
                                     </Form.Group>
 
                                   </Col>
                               </Row>
-                              <Row>
+                              <Row className='pt-4'>
 
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > width</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                          <Col>
+                                          <Form.Label > width</Form.Label>
+                                          </Col>
+
+                                           <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="width"
                                             defaultValue={CheckPropsTypeAndPassValue('pRef', 'width')}
                                             onChange={(e) => setWidth(e.target.value)}
                                         />
+                                          </Col>
+
+                                        
+                                        
                                     </Form.Group>
                                 </Col>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > chest</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                          <Form.Label > chest</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="chest"
                                             defaultValue={CheckPropsTypeAndPassValue('pRef', 'chest')}
                                             onChange={(e) => setChest(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                        
                                     </Form.Group>
                                   </Col>
                               </Row>
-                              <Row>
+                              <Row className='pt-4'>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > bust</Form.Label>
-                                        <Form.Control
-                                            type="number"
-                                            name="bust"
-                                            defaultValue={CheckPropsTypeAndPassValue("pRef", 'bust')}
-                                            onChange={(e) => setbust(e.target.value)}
+                                      <Form.Group as={Row} controlId="name">
+                                          <Col>
+                                          <Form.Label > bust</Form.Label>
+                                          </Col>
+
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
+                                                    type="number"
+                                                    name="bust"
+                                                    defaultValue={CheckPropsTypeAndPassValue("pRef", 'bust')}
+                                                    onChange={(e) => setbust(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                        
                                     </Form.Group>
                                   </Col>
                                   <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > waist</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                          <Col>
+                                          <Form.Label > waist</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="waist"defaultValue={CheckPropsTypeAndPassValue("pRef", 'waist')}
                                             onChange={(e) => setwaist(e.target.value)}
 
 
                                         />
+                                          </Col>
+                                        
+                                        
                                     </Form.Group>
                                 </Col>
                             </Row>
 
-                            <Row>
+                            <Row className='pt-4'>
                                 
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
-                                        <Form.Label > hip</Form.Label>
-                                        <Form.Control
+                                          <Col md={6}>
+                                              <Form.Label > hip</Form.Label>
+                                        </Col>
+                                        <Col md={6}>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="hip"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'hip')}
-                                            onChange={(e) => sethip(e.target.value)}
+                                                  onChange={(e) => sethip(e.target.value)}
+                                                  
                                         />
+                                        </Col>
+                                        
+                                        
                                     </Form.Group>
 
                                   </Col>
                                    <Col>
                                     <Form.Group as={Row} controlId="name">
-                                        <Form.Label > top_hip</Form.Label>
-                                        <Form.Control
+                                          <Col>
+                                               <Form.Label > top_hip</Form.Label>
+                                        </Col>
+                                        <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="top_hip"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'top_hip')}
                                             onChange={(e) => settop_hip(e.target.value)}
                                         />
+                                        </Col>
+                                       
+                                       
                                     </Form.Group>
                                 </Col>
                               </Row>
                               
-                              <Row>
+                              <Row className='pt-4'>
 
                                
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > low_waist</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                          <Col>
+                                           <Form.Label > low_waist</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="low_waist"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'low_waist')}
                                             onChange={(e) => setlow_waist(e.target.value)}
                                         />
+                                          </Col>
+                                       
+                                        
                                     </Form.Group>
                                 </Col>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > back_waist</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                          <Form.Label > back_waist</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="back_waist"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'back_waist')}
                                             onChange={(e) => setback_waist(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                      
                                     </Form.Group>
                                 </Col>
                             </Row>
 
-                            <Row>
+                            <Row className='pt-4'>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > front_waist</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                           <Form.Label > front_waist</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="front_waist"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'front_waist')}
                                             onChange={(e) => setfront_waist(e.target.value)}
                                         />
+                                          </Col>
+                                       
+                                        
                                     </Form.Group>
                                 </Col>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > schoulder_width</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                          <Col>
+                                           <Form.Label > schoulder_width</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="schoulder_width"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'schoulder_width')}
                                             onChange={(e) => setschoulder_width(e.target.value)}
                                         />
+                                          </Col>
+                                       
+                                       
                                     </Form.Group>
 
                                   </Col>
                               </Row>
                               
-                              <Row>
+                              <Row className='pt-4'>
 
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > back_width</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                          <Form.Label > back_width</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="back_width"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'back_width')}
                                             onChange={(e) => setback_width(e.target.value)}
                                         />
+                                          </Col> 
+                                        
+                                       
                                     </Form.Group>
                                 </Col>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > bust_height</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                          <Form.Label > bust_height</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="bust_height"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'bust_height')}
                                             onChange={(e) => setbust_height(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                       
                                     </Form.Group>
                                 </Col>
                                
                               </Row>
-                              <Row>
+                              <Row className='pt-4'>
                                    <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > apex</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                           <Form.Label > apex</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="apex"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'apex')}
                                             onChange={(e) => setapex(e.target.value)}
                                         />
+                                          </Col>
+                                       
+                                       
                                     </Form.Group>
                                   </Col>
                                   <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > arm_hole_depth</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                           <Form.Label > arm_hole_depth</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="arm_hole_depth"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'arm_hole_depth')}
                                             onChange={(e) => setarm_hole_depth(e.target.value)}
                                         />
+                                          </Col>
+                                       
+                                      
                                     </Form.Group>
                                 </Col>
                                   
                               </Row>
 
-                            <Row>
+                            <Row className='pt-4'>
                                 
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > hip_height</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                           <Form.Label > hip_height</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="hip_height"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'hip_height')}
                                             onChange={(e) => sethip_height(e.target.value)}
                                         />
+                                          </Col>
+                                       
+                                        
                                     </Form.Group>
 
                                   </Col>
 
                                    <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > top_arm</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                           <Form.Label > top_arm</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="top_arm"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'top_arm')}
                                             onChange={(e) => setTop_arm(e.target.value)}
                                         />
+                                          </Col>
+                                       
+                                      
                                     </Form.Group>
                                   </Col>
                                   
                               </Row>
                               
-                              <Row>
+                              <Row className='pt-4'>
 
                                
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > wrist_circ</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                          <Form.Label > wrist_circ</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="wrist_circ"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'wrist_circ')}
                                             onChange={(e) => setWrist_circ(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                       
                                     </Form.Group>
                                 </Col>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > sleeve_length</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                          <Form.Label > sleeve_length</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="sleeve_length"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'sleeve_length')}
                                             onChange={(e) => setSleeve_length(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                       
                                     </Form.Group>
                                 </Col>
                             </Row>
-
-                            <Row>
+ 
+                            <Row className='pt-4'>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > elbow_length</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                          <Form.Label > elbow_length</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="elbow_length"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'elbow_length')}
                                             onChange={(e) => setElbow_length(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                      
                                     </Form.Group>
                                 </Col>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > rise</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                           <Form.Label > rise</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="rise"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'rise')}
                                             onChange={(e) => setrise(e.target.value)}
                                         />
+                                          </Col>
+                                       
+                                      
                                     </Form.Group>
 
                                   </Col>
                               </Row>
                               
-                              <Row>
+                              <Row className='pt-4'>
 
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > crotch_depth</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                          <Form.Label > crotch_depth</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="crotch_depth"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'crotch_depth')}
                                             onChange={(e) => setCrotch_depth(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                       
                                     </Form.Group>
                                 </Col>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > waist_to_knee</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                          <Form.Label > waist_to_knee</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="waist_to_knee"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'waist_to_knee')}
                                             onChange={(e) => setWaist_to_knee(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                       
                                     </Form.Group>
                                   </Col>
                               </Row>
-                              <Row>
+                              <Row className='pt-4'>
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > knee</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                          <Form.Label > knee</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="knee"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'knee')}
                                             onChange={(e) => setKnee(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                       
                                     </Form.Group>
                                   </Col>
                                   <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > thigh</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                           <Form.Label > thigh</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="thigh"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'thigh')}
                                             onChange={(e) => setThigh(e.target.value)}
                                         />
+                                          </Col>
+                                       
+                                        
                                     </Form.Group>
                                 </Col>
                             </Row>
 
-                            <Row>
+                            <Row className='pt-4'>
                                 
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > dress_length</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                          <Form.Label > dress_length</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="dress_length"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'dress_length')}
                                             onChange={(e) => setDress_length(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                       
                                     </Form.Group>
 
                                 </Col>
 
                                 <Col>
-                                    <Form.Group as={Row} controlId="name">
-                                        <Form.Label > blouse_length</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="name">
+                                           <Col>
+                                           <Form.Label > blouse_length</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="blouse_length"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'blouse_length')}
                                             onChange={(e) => setBlouse_length(e.target.value)}
                                         />
+                                          </Col>
+                                       
+                                      
                                     </Form.Group>
                                 </Col>
 
                             </Row>
 
-                            <Row>
+                            <Row className='pt-4'>
                                 <Col>
-                                    <Form.Group as={Row} controlId="note">
-                                        <Form.Label > pants_length</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="note">
+                                           <Col>
+                                          <Form.Label > pants_length</Form.Label>
+                                          </Col>
+                                          <Col>
+                                           <Form.Control
+                                              className='w-50'
                                             type="number"
                                             name="pants_length"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'pants_length')}
                                             onChange={(e) => setPants_length(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                         
                                     </Form.Group>
 
                                 </Col>
                                 <Col>
-                                    <Form.Group as={Row} controlId="note">
-                                        <Form.Label > skirt_length</Form.Label>
-                                        <Form.Control
+                                      <Form.Group as={Row} controlId="note">
+                                           <Col>
+                                          <Form.Label > skirt_length</Form.Label>
+                                          </Col>
+                                          <Col>
+                                              <Form.Control
+                                                  className='w-50'
                                             type="number"
                                             name="skirt_length"
                                             defaultValue={CheckPropsTypeAndPassValue("pRef", 'skirt_length')}
                                             onChange={(e) => setSkirt_length(e.target.value)}
                                         />
+                                          </Col>
+                                        
+                                       
                                     </Form.Group>
 
                                 </Col>

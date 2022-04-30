@@ -262,7 +262,7 @@ export const EditForm = (props) => {
                             <Row>
                                 <Col>
                                     <Form.Group as={Row} controlId="name">
-                                        <Form.Label > Name , </Form.Label>
+                                        <Form.Label > {translate("name")} </Form.Label>
                                         <Form.Control
                                             type="text"
                                             name="name"
@@ -274,7 +274,7 @@ export const EditForm = (props) => {
                                 </Col>
                                 <Col>
                                     <Form.Group as={Row} controlId="mobile">
-                                        <Form.Label > Mobile</Form.Label>
+                                        <Form.Label > {translate("mobile")}</Form.Label>
                                         <Form.Control
                                             type="number"
                                             name="mobile"
@@ -288,7 +288,7 @@ export const EditForm = (props) => {
                             <Row>
                                 <Col>
                                     <Form.Group as={Row} controlId="size">
-                                        <Form.Label > Size</Form.Label>
+                                        <Form.Label > {translate("size")}</Form.Label>
                                         <Form.Control
                                             type="text"
                                             name="size"
@@ -303,7 +303,7 @@ export const EditForm = (props) => {
                             <Row>
                                 <Col>
                                     <Form.Group as={Row} controlId="cust_note">
-                                        <Form.Label > Note</Form.Label>
+                                        <Form.Label > {translate("note")}</Form.Label>
                                         <Form.Control
                                             type="text"
                                               name="cust_note"
